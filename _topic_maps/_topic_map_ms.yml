@@ -160,5 +160,7 @@ Distros: microshift
 Topics:
 - Name: Checking your version
   File: microshift-version
+- Name: Checking audit logs
+  File: 
 - Name: Additional information
   File: microshift-things-to-know

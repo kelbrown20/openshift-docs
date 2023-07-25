@@ -1,0 +1,9 @@
+:_content-type: ASSEMBLY
+[id="authentication-with-microshift"]
+= Checking your audit logs on MicroShift
+include::_attributes/attributes-microshift.adoc[]
+:context: audit-logs-microshift 
+
+toc::[]
+
+include::modules/microshift-viewing-audit-logs.adoc[leveloffset=+1]
