@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: install-connectivity-link-on-a-single-node-openshift-cluster
 
-= Install Connectivity Link on a single-node OpenShift cluster
 
 // Coverage gap: no existing modules mapped for this job.
 

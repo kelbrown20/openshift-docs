@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: automate-multicluster-traffic-routing
 
-= Automate multicluster traffic routing
 
 include::modules/con-connectivity-link-platform-eng-work.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

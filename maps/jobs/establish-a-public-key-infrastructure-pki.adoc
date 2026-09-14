@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: establish-a-public-key-infrastructure-pki
 
-= Establish a public key infrastructure (PKI)
 
 include::modules/con-rhcl-about-using-x509-auth.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

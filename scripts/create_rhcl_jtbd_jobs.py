@@ -300,8 +300,6 @@ def write_job_map(job):
         ":_mod-docs-content-type: MAP",
         f":context: {job['slug']}",
         "",
-        f"= {job['name']}",
-        "",
     ]
 
     if job.get("coverage") == "gap":

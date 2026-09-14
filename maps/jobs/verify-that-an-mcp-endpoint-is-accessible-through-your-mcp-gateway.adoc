@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: verify-that-an-mcp-endpoint-is-accessible-through-your-mcp-gateway
 
-= Verify that an MCP endpoint is accessible through your MCP gateway
 
 include::modules/con-rhcl-jtbd-verify-that-an-mcp-endpoint-is-accessible-through-your-mcp-gateway.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

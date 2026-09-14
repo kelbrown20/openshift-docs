@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: scale-and-size-connectivity-link-components
 
-= Scale and size Connectivity Link components
 
 // Coverage gap: no existing modules mapped for this job.
 

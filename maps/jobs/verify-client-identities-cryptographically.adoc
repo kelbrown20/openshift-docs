@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: verify-client-identities-cryptographically
 
-= Verify client identities cryptographically
 
 include::modules/con-rhcl-about-using-x509-auth.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

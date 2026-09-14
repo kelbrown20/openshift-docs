@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: use-authentication-with-mcp-gateway
 
-= Use authentication with MCP gateway
 
 include::modules/con-rhcl-jtbd-use-authentication-with-mcp-gateway.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

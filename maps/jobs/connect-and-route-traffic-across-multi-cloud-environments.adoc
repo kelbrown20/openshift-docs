@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: connect-and-route-traffic-across-multi-cloud-environments
 
-= Connect and route traffic across multi-cloud environments
 
 include::modules/con-connectivity-link-platform-eng-work.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

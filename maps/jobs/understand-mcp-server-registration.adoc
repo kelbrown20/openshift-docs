@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: understand-mcp-server-registration
 
-= Understand MCP server registration
 
 include::modules/con-mcp-gateway-register-mcp-server.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: verify-that-your-external-mcp-server-is-ready-to-use
 
-= Verify that your external MCP server is ready to use
 
 include::modules/con-rhcl-jtbd-verify-that-your-external-mcp-server-is-ready-to-use.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

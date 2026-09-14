@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: troubleshoot-and-support-for-mcp-gateway
 
-= Troubleshoot and support for MCP gateway
 
 include::modules/con-mcp-gateway-ts-gateway-routing.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

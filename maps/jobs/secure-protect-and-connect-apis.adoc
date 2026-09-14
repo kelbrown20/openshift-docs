@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: secure-protect-and-connect-apis
 
-= Secure, protect, and connect APIs
 
 include::modules/con-connectivity-link-app-dev-work.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

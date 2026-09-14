@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-prometheus-alerts
 
-= Configure Prometheus alerts
 
 include::modules/con-rhcl-jtbd-configure-prometheus-alerts.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

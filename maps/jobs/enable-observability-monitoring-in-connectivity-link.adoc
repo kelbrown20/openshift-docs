@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: enable-observability-monitoring-in-connectivity-link
 
-= Enable observability monitoring in Connectivity Link
 
 include::modules/con-rhcl-jtbd-enable-observability-monitoring-in-connectivity-link.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

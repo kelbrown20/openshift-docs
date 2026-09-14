@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: apply-a-referencegrant-custom-resource
 
-= Apply a ReferenceGrant custom resource
 
 include::modules/con-mcp-gateway-isolated-deployment.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

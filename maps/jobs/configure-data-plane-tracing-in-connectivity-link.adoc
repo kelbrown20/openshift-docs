@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-data-plane-tracing-in-connectivity-link
 
-= Configure data plane tracing in Connectivity Link
 
 include::modules/ref-obs-data-plane-tracing-config-fields.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

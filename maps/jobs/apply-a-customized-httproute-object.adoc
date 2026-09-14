@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: apply-a-customized-httproute-object
 
-= Apply a customized HTTPRoute object
 
 include::modules/con-rhcl-jtbd-apply-a-customized-httproute-object.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

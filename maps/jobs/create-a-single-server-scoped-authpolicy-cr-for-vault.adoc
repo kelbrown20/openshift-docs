@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: create-a-single-server-scoped-authpolicy-cr-for-vault
 
-= Create a single-server-scoped AuthPolicy CR for Vault
 
 include::modules/con-rhcl-jtbd-create-a-single-server-scoped-authpolicy-cr-for-vault.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

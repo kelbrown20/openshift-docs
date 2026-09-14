@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: create-a-gateway-object-for-your-mcp-gateway-deployment
 
-= Create a Gateway object for your MCP gateway deployment
 
 include::modules/con-rhcl-jtbd-create-a-gateway-object-for-your-mcp-gateway-deployment.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

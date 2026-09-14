@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: install-connectivity-link-on-openshift-from-the-cli-with-istio-as-gatewa
 
-= Install Connectivity Link on OpenShift from the CLI with Istio as Gateway controller
 
 include::modules/con-rhcl-jtbd-install-connectivity-link-on-openshift-from-the-cli-with-istio-as-gatewa.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

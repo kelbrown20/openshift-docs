@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: protect-services-from-traffic-spikes
 
-= Protect services from traffic spikes
 
 include::modules/con-rhcl-jtbd-protect-services-from-traffic-spikes.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

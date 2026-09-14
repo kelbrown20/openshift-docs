@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: understand-the-mcpserverregistration-custom-resource
 
-= Understand the MCPServerRegistration custom resource
 
 include::modules/con-rhcl-jtbd-understand-the-mcpserverregistration-custom-resource.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

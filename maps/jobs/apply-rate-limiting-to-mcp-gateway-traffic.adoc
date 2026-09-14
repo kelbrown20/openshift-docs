@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: apply-rate-limiting-to-mcp-gateway-traffic
 
-= Apply rate limiting to MCP gateway traffic
 
 include::modules/con-mcp-gateway-authentication.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: troubleshoot-stuck-pods-in-a-disconnected-installation
 
-= Troubleshoot stuck pods in a disconnected installation
 
 include::modules/con-rhcl-jtbd-troubleshoot-stuck-pods-in-a-disconnected-installation.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

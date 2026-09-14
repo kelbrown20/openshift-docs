@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: encrypt-gateway-connections
 
-= Encrypt gateway connections
 
 include::modules/con-rhcl-jtbd-encrypt-gateway-connections.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

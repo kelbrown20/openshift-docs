@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-custom-error-responses
 
-= Configure custom error responses
 
 // Coverage gap: no existing modules mapped for this job.
 

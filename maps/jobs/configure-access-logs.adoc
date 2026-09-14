@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-access-logs
 
-= Configure access logs
 
 include::modules/con-rhcl-jtbd-configure-access-logs.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

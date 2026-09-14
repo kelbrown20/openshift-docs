@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: api-management-role-based-access-reference
 
-= API management role-based-access reference
 
 include::modules/con-rhcl-jtbd-api-management-role-based-access-reference.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

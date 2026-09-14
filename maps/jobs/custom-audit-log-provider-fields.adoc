@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: custom-audit-log-provider-fields
 
-= Custom audit log provider fields
 
 include::modules/con-rhcl-jtbd-custom-audit-log-provider-fields.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

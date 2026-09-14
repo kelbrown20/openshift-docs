@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: install-connectivity-link-with-the-openshift-web-console
 
-= Install Connectivity Link with the OpenShift web console
 
 include::modules/con-rhcl-jtbd-install-connectivity-link-with-the-openshift-web-console.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: migrate-from-3scale-to-connectivity-link
 
-= Migrate from 3scale to Connectivity Link
 
 // Coverage gap: no existing modules mapped for this job.
 

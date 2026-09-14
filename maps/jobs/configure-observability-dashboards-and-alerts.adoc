@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-observability-dashboards-and-alerts
 
-= Configure observability dashboards and alerts
 
 include::modules/con-about-configuring-observability-dashboards.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

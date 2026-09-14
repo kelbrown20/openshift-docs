@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: connect-grpc-applications
 
-= Connect gRPC applications
 
 include::modules/con-about-grpc-support.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: use-a-vault-root-token
 
-= Use a Vault root token
 
 include::modules/con-rhcl-jtbd-use-a-vault-root-token.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

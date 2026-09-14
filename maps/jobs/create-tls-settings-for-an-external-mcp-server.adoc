@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: create-tls-settings-for-an-external-mcp-server
 
-= Create TLS settings for an external MCP server
 
 include::modules/con-rhcl-jtbd-create-tls-settings-for-an-external-mcp-server.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

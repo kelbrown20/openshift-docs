@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: troubleshoot-dnspolicy
 
-= Troubleshoot DNSPolicy
 
 include::modules/con-coredns-troubleshooting.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

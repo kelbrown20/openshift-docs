@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: install-the-mcp-gateway-with-olm
 
-= Install the MCP gateway with OLM
 
 include::modules/con-rhcl-jtbd-install-the-mcp-gateway-with-olm.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

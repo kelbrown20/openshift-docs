@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: control-who-can-access-your-published-api
 
-= Control who can access your published API
 
 include::modules/con-rhcl-jtbd-control-who-can-access-your-published-api.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

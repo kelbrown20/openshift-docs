@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-storage-for-rate-limiting
 
-= Configure storage for rate limiting
 
 include::modules/con-rhcl-jtbd-configure-storage-for-rate-limiting.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

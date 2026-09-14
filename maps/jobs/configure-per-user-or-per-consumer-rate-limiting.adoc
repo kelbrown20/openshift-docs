@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-per-user-or-per-consumer-rate-limiting
 
-= Configure per-user or per-consumer rate limiting
 
 include::modules/con-rhcl-jtbd-configure-per-user-or-per-consumer-rate-limiting.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

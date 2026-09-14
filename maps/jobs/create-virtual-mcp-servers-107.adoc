@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: create-virtual-mcp-servers-107
 
-= Create virtual MCP servers
 
 include::modules/con-rhcl-jtbd-create-virtual-mcp-servers-107.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

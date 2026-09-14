@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: praxis-architecture
 
-= Praxis architecture
 
 // Coverage gap: no existing modules mapped for this job.
 

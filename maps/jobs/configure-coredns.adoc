@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: configure-coredns
 
-= Configure coreDNS
 
 include::modules/con-about-using-onprem-dns-coredns.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

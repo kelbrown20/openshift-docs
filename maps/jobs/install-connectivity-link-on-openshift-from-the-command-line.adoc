@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: install-connectivity-link-on-openshift-from-the-command-line
 
-= Install Connectivity Link on OpenShift from the command line
 
 include::modules/con-rhcl-jtbd-install-connectivity-link-on-openshift-from-the-command-line.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

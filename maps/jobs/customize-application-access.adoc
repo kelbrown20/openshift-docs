@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: customize-application-access
 
-= Customize application access
 
 include::modules/con-rhcl-jtbd-customize-application-access.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

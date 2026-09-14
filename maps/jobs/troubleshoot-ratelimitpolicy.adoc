@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: troubleshoot-ratelimitpolicy
 
-= Troubleshoot RateLimitPolicy
 
 include::modules/con-rhcl-jtbd-troubleshoot-ratelimitpolicy.adoc[leveloffset=+0,chunk="to-content",toc="no"]
 

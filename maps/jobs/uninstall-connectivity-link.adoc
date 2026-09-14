@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: uninstall-connectivity-link
 
-= Uninstall Connectivity Link
 
 // Coverage gap: no existing modules mapped for this job.
 
