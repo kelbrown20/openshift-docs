@@ -1,6 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: apply-the-mcpgatewayextension-custom-resource
 
-include::modules/con-rhcl-jtbd-apply-the-mcpgatewayextension-custom-resource.adoc[leveloffset=+0,chunk="to-content"]
+include::modules/apply-the-mcpgatewayextension-custom-resource-con.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-install-olm-ext-cr.adoc[leveloffset=+1,toc="no"]

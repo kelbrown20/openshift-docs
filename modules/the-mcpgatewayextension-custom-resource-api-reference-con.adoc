@@ -1,0 +1,6 @@
+:_mod-docs-content-type: CONCEPT
+[id="the-mcpgatewayextension-custom-resource-api-reference-con_{context}"]
+= The MCPGatewayExtension custom resource API reference
+
+[role="_abstract"]
+To look up the api fields and their descriptions so you can correctly set parameters for target references, session storage, trusted headers, and route management.

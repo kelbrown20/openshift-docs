@@ -1,6 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: mirror-the-connectivity-link-operator-catalog
 
-include::modules/con-rhcl-jtbd-mirror-the-connectivity-link-operator-catalog.adoc[leveloffset=+0,chunk="to-content"]
+include::modules/mirror-the-connectivity-link-operator-catalog-con.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-rhcl-disconnected-mirror-catalog.adoc[leveloffset=+1,toc="no"]

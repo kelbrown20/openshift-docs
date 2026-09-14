@@ -1,6 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: install-connectivity-link-on-openshift-from-the-command-line
 
-include::modules/con-rhcl-jtbd-install-connectivity-link-on-openshift-from-the-command-line.adoc[leveloffset=+0,chunk="to-content"]
+include::modules/install-connectivity-link-on-openshift-from-the-command-line-con.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-install-on-openshift-cli-cio.adoc[leveloffset=+1,toc="no"]

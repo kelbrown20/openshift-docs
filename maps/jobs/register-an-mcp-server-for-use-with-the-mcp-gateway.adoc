@@ -1,6 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: register-an-mcp-server-for-use-with-the-mcp-gateway
 
-include::modules/con-rhcl-jtbd-register-an-mcp-server-for-use-with-the-mcp-gateway.adoc[leveloffset=+0,chunk="to-content"]
+include::modules/register-an-mcp-server-for-use-with-the-mcp-gateway-con.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-register-mcp-server.adoc[leveloffset=+1,toc="no"]

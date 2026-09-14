@@ -178,14 +178,16 @@ def statement_to_abstract(statement: str) -> str:
     return statement
 
 
-def create_intro_module(slug: str, title: str, statement: str) -> str:
-    module_name = f"con-rhcl-jtbd-{slug}.adoc"
-    path = MODULES_DIR / module_name
-    abstract = statement_to_abstract(statement)
-    content = f"""// Job intro concept for JTBD map: {slug}
+def intro_module_name(slug: str) -> str:
+    return f"{slug}-con.adoc"
 
-:_mod-docs-content-type: CONCEPT
-[id="rhcl-jtbd-{slug}_{{context}}"]
+
+def create_intro_module(slug: str, title: str, statement: str) -> str:
+    module_name = intro_module_name(slug)
+    path = MODULES_DIR / module_name
+    abstract = statement_to_abstract(statement) or title
+    content = f""":_mod-docs-content-type: CONCEPT
+[id="{slug}-con_{{context}}"]
 = {title}
 
 [role="_abstract"]
@@ -193,6 +195,40 @@ def create_intro_module(slug: str, title: str, statement: str) -> str:
 """
     path.write_text(content, encoding="utf-8")
     return f"modules/{module_name}"
+
+
+def module_type_rank(module_file: str) -> int:
+    base = Path(module_file).name
+    if base.startswith("con-"):
+        return 0
+    if base.startswith("proc-"):
+        return 1
+    if base.startswith("ref-"):
+        return 2
+    return 3
+
+
+def sort_modules(modules: list[dict]) -> list[dict]:
+    return sorted(modules, key=lambda mod: (module_type_rank(mod["file"]), mod["file"]))
+
+
+def pick_intro_and_body(
+    modules: list[dict],
+    slug: str,
+    title: str,
+    statement: str,
+) -> tuple[str, list[str]]:
+    concept_modules = [m for m in modules if module_is_concept(m["file"])]
+    if concept_modules:
+        intro = concept_modules[0]["file"]
+        body = [m["file"] for m in modules if m["file"] != intro]
+    else:
+        intro = create_intro_module(slug, title, statement)
+        body = [m["file"] for m in modules]
+
+    body = sort_modules([{"file": mod} for mod in body])
+    body = [m["file"] for m in body]
+    return intro, body
 
 
 def build_jobs_from_coverage(coverage_rows, meta):
@@ -215,7 +251,6 @@ def build_jobs_from_coverage(coverage_rows, meta):
 
     slug_counts = defaultdict(int)
     jobs = {}
-    intro_created = []
 
     for num in sorted(by_num):
         if num not in meta:
@@ -236,19 +271,12 @@ def build_jobs_from_coverage(coverage_rows, meta):
             seen.add(mod["file"])
             modules.append(mod)
 
-        jtbd_intro = MODULES_DIR / f"con-rhcl-jtbd-{slug}.adoc"
-        concept_modules = [m for m in modules if module_is_concept(m["file"])]
-        if concept_modules:
-            intro = concept_modules[0]["file"]
-        elif jtbd_intro.exists():
-            intro = f"modules/con-rhcl-jtbd-{slug}.adoc"
-        else:
-            intro = None
-        body_modules = [m["file"] for m in modules if m["file"] != intro]
-
-        if not intro:
-            intro = create_intro_module(slug, info["name"], info["statement"])
-            intro_created.append(intro)
+        intro, body_modules = pick_intro_and_body(
+            modules,
+            slug,
+            info["name"],
+            info["statement"],
+        )
 
         jobs[num] = {
             "num": num,
@@ -278,12 +306,10 @@ def build_jobs_from_coverage(coverage_rows, meta):
         slug = slugify(parent_name)
         if slug in {j["slug"] for j in jobs.values()}:
             slug = f"{slug}-parent"
-        intro = create_intro_module(
-            slug,
-            parent_name,
-            f"When I need to {parent_name.lower()}, I want to complete the related configuration tasks.",
+        parent_statement = (
+            f"When I need to {parent_name.lower()}, I want to complete the related tasks, "
+            f"so I can manage {parent_name.lower()}."
         )
-        intro_created.append(intro)
         jobs[f"parent:{parent_name}"] = {
             "num": None,
             "slug": slug,
@@ -292,12 +318,12 @@ def build_jobs_from_coverage(coverage_rows, meta):
             "parent": "",
             "coverage": "",
             "notes": "",
-            "intro": intro,
+            "intro": create_intro_module(slug, parent_name, parent_statement),
             "modules": [],
             "children": [jobs[n]["slug"] for n in child_by_parent[parent_name]],
         }
 
-    return jobs, intro_created
+    return jobs
 
 
 def write_job_map(job):
@@ -308,13 +334,10 @@ def write_job_map(job):
         "",
     ]
 
-    if job.get("coverage") == "gap":
-        lines.append("// Coverage gap: no existing modules mapped for this job.")
+    if job.get("intro"):
+        intro = job["intro"].replace("modules/", "")
+        lines.append(f'include::modules/{intro}[leveloffset=+0,chunk="to-content"]')
         lines.append("")
-
-    intro = job["intro"].replace("modules/", "")
-    lines.append(f'include::modules/{intro}[leveloffset=+0,chunk="to-content"]')
-    lines.append("")
 
     for mod in job["modules"]:
         mod_path = mod.replace("modules/", "")
@@ -419,7 +442,7 @@ def write_category_maps(jobs, meta):
 def main():
     meta = load_jobs_meta()
     coverage = enrich_coverage(meta)
-    jobs, intro_created = build_jobs_from_coverage(coverage, meta)
+    jobs = build_jobs_from_coverage(coverage, meta)
 
     for job in jobs.values():
         write_job_map(job)
@@ -429,7 +452,6 @@ def main():
 
     job_maps = sorted(JOBS_DIR.glob("*.adoc"))
     print(f"Wrote enriched coverage map: {OUT_COVERAGE}")
-    print(f"Created {len(intro_created)} intro concept modules")
     print(f"Created {len(job_maps)} job map files")
     for cat in sorted(CATEGORY_FILES):
         path = RHCL_MAPS / CATEGORY_FILES[cat]

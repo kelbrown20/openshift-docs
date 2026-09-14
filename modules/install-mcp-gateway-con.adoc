@@ -1,0 +1,6 @@
+:_mod-docs-content-type: CONCEPT
+[id="install-mcp-gateway-con_{context}"]
+= Install MCP gateway
+
+[role="_abstract"]
+To install and configure the mcp gateway on openshift so you can manage MCP server connections, routing, and security from a single control plane.
