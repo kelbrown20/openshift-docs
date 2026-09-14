@@ -8,7 +8,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 JOBS_CSV = Path("/Users/shdiaz/Desktop/DITA maps/RHCL JTBD DITA map worksheet copy - Jobs by Category.csv")
-COVERAGE_CSV = Path("/Users/shdiaz/Downloads/RHCL-jtbd-coverage-map.csv")
+COVERAGE_CSV = REPO / "RHCL-jtbd-coverage-map.csv"
 OUT_COVERAGE = REPO / "RHCL-jtbd-coverage-map.csv"
 JOBS_DIR = REPO / "maps" / "jobs"
 MODULES_DIR = REPO / "modules"
@@ -236,8 +236,14 @@ def build_jobs_from_coverage(coverage_rows, meta):
             seen.add(mod["file"])
             modules.append(mod)
 
+        jtbd_intro = MODULES_DIR / f"con-rhcl-jtbd-{slug}.adoc"
         concept_modules = [m for m in modules if module_is_concept(m["file"])]
-        intro = concept_modules[0]["file"] if concept_modules else None
+        if concept_modules:
+            intro = concept_modules[0]["file"]
+        elif jtbd_intro.exists():
+            intro = f"modules/con-rhcl-jtbd-{slug}.adoc"
+        else:
+            intro = None
         body_modules = [m["file"] for m in modules if m["file"] != intro]
 
         if not intro:
@@ -320,6 +326,53 @@ def write_job_map(job):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+RELEASE_NOTES_MODULES = [
+    ("modules/ref-relnotes-intro.adoc", '+0', True),
+    ("modules/ref-relnotes-about.adoc", '+1', False),
+    ("modules/ref-relnotes-new-features.adoc", '+2', False),
+    ("modules/ref-relnotes-tech-preview.adoc", '+2', False),
+    ("modules/rhcl-relnotes-dev-preview.adoc", '+2', False),
+    ("modules/ref-relnotes-bug-fixes.adoc", '+2', False),
+    ("modules/ref-relnotes-known-issues.adoc", '+2', False),
+    ("modules/rhcl-relnotes-z-stream.adoc", '+2', False),
+]
+
+
+def write_release_notes_job_map():
+    """Decompose release_notes/rhcl-release-notes.adoc into a whats-new job map."""
+    path = JOBS_DIR / "rhcl-release-notes.adoc"
+    lines = [
+        ":_mod-docs-content-type: MAP",
+        ":context: rhcl-release-notes",
+        "",
+        "// Decomposed from release_notes/rhcl-release-notes.adoc",
+        "",
+    ]
+    for mod, offset, is_intro in RELEASE_NOTES_MODULES:
+        mod_path = mod.replace("modules/", "")
+        attrs = f'leveloffset={offset}'
+        if is_intro:
+            attrs += ',chunk="to-content"'
+        else:
+            attrs += ',toc="no"'
+        lines.append(f"include::modules/{mod_path}[{attrs}]")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_whats_new_map():
+    write_release_notes_job_map()
+    path = RHCL_MAPS / "whats-new.adoc"
+    lines = [
+        ":_mod-docs-content-type: MAP",
+        "",
+        "= What's new",
+        "",
+        "include::jobs/rhcl-release-notes.adoc[leveloffset=+1]",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def write_category_maps(jobs, meta):
     top_level = []
     child_slugs = set()
@@ -372,6 +425,7 @@ def main():
         write_job_map(job)
 
     write_category_maps(jobs, meta)
+    write_whats_new_map()
 
     job_maps = sorted(JOBS_DIR.glob("*.adoc"))
     print(f"Wrote enriched coverage map: {OUT_COVERAGE}")

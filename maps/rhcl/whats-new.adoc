@@ -2,4 +2,4 @@
 
 = What's new
 
-//release notes modules missing
+include::jobs/rhcl-release-notes.adoc[leveloffset=+1]

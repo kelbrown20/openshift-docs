@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: automatically-created-httproute-example
 
-
 include::modules/con-rhcl-jtbd-automatically-created-httproute-example.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/ref-mcp-gateway-auto-route.adoc[leveloffset=+1,toc="no"]

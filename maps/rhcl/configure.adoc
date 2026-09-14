@@ -1,9 +1,6 @@
 :_mod-docs-content-type: MAP
 
 = Configure
-//this category contains a mishmash that needs sorting; many of these topics are day 0 tasks that a user would normally do immediately after installing the operators
-
-include::jobs/enable-the-connectivity-link-dynamic-plugin-for-openshift-web-console.adoc[leveloffset=+1]
 
 include::jobs/configure-google-dns-provider-credentials.adoc[leveloffset=+1]
 
@@ -13,22 +10,17 @@ include::jobs/configure-coredns.adoc[leveloffset=+1]
 
 include::jobs/configure-storage-for-rate-limiting.adoc[leveloffset=+1]
 
+include::jobs/enable-the-connectivity-link-dynamic-plugin-for-openshift-web-console.adoc[leveloffset=+1]
+
 include::jobs/manage-on-premise-dns-traffic.adoc[leveloffset=+1]
 
 include::jobs/route-internal-traffic-for-a-single-cluster.adoc[leveloffset=+1]
 
 include::jobs/distribute-traffic-across-multiple-on-premise-clusters.adoc[leveloffset=+1]
 
-include::jobs/understand-policy-target-hierarchy-and-precedence.adoc[leveloffset=+1]
-
-//mcp gateway (needs review to sort jobs)
 include::jobs/create-a-gateway-object-for-your-mcp-gateway-deployment.adoc[leveloffset=+1]
 
 include::jobs/configure-mcp-gateway-listeners.adoc[leveloffset=+1]
-
-include::jobs/understand-the-mcpgatewayextension-custom-resource.adoc[leveloffset=+1]
-
-include::jobs/verify-that-an-mcp-endpoint-is-accessible-through-your-mcp-gateway.adoc[leveloffset=+1]
 
 include::jobs/apply-a-referencegrant-custom-resource.adoc[leveloffset=+1]
 
@@ -77,5 +69,3 @@ include::jobs/configure-dns-for-hybrid-or-on-premises-environments-with-an-exter
 include::jobs/configure-custom-error-responses.adoc[leveloffset=+1]
 
 include::jobs/give-connectivity-link-access.adoc[leveloffset=+1]
-
-include::jobs/understand-the-mcpserverregistration-custom-resource.adoc[leveloffset=+1]

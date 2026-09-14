@@ -1,8 +1,8 @@
 :_mod-docs-content-type: MAP
 :context: apply-a-referencegrant-custom-resource
 
-
 include::modules/con-mcp-gateway-isolated-deployment.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-referencegrant.adoc[leveloffset=+1,toc="no"]
 include::modules/proc-mcp-gateway-deploy-isolated-instances.adoc[leveloffset=+1,toc="no"]
+include::modules/proc-mcp-gateway-expose-isolated-instances.adoc[leveloffset=+1,toc="no"]

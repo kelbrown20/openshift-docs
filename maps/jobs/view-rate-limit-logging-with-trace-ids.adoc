@@ -1,7 +1,6 @@
 :_mod-docs-content-type: MAP
 :context: view-rate-limit-logging-with-trace-ids
 
-
 include::modules/con-rhcl-jtbd-view-rate-limit-logging-with-trace-ids.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-viewing-rate-limit-trace-IDs.adoc[leveloffset=+1,toc="no"]

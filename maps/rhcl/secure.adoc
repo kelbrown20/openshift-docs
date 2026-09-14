@@ -2,8 +2,6 @@
 
 = Secure
 
-//mess of mixed modules that need sorting
-
 include::jobs/secure-protect-and-connect-apis.adoc[leveloffset=+1]
 
 include::jobs/encrypt-gateway-connections.adoc[leveloffset=+1]
