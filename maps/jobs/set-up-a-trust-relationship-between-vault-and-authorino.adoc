@@ -2,6 +2,6 @@
 :context: set-up-a-trust-relationship-between-vault-and-authorino
 
 
-include::modules/con-rhcl-jtbd-set-up-a-trust-relationship-between-vault-and-authorino.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-set-up-a-trust-relationship-between-vault-and-authorino.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-trust-vault-authorino.adoc[leveloffset=+1,toc="no"]

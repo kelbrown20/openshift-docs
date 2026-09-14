@@ -4,5 +4,5 @@
 
 // Coverage gap: no existing modules mapped for this job.
 
-include::modules/con-rhcl-jtbd-uninstall-connectivity-link.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-uninstall-connectivity-link.adoc[leveloffset=+0,chunk="to-content"]
 

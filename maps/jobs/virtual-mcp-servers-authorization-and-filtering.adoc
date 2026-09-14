@@ -2,5 +2,5 @@
 :context: virtual-mcp-servers-authorization-and-filtering
 
 
-include::modules/con-virt-mcp-server-auth-tool-filtering.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-virt-mcp-server-auth-tool-filtering.adoc[leveloffset=+0,chunk="to-content"]
 

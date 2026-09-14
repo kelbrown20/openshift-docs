@@ -2,6 +2,6 @@
 :context: troubleshoot-tlspolicy
 
 
-include::modules/con-rhcl-jtbd-troubleshoot-tlspolicy.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-troubleshoot-tlspolicy.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-set-tls-policy.adoc[leveloffset=+1,toc="no"]

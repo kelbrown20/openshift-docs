@@ -2,6 +2,6 @@
 :context: apply-rate-limiting-to-mcp-gateway-traffic
 
 
-include::modules/con-mcp-gateway-authentication.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-mcp-gateway-authentication.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-set-default-rate-limit-policy.adoc[leveloffset=+1,toc="no"]

@@ -2,5 +2,5 @@
 :context: configure-dns-for-hybrid-or-on-premises-environments-with-an-external-lo
 
 
-include::modules/con-mcp-gateway-dns-management.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-mcp-gateway-dns-management.adoc[leveloffset=+0,chunk="to-content"]
 

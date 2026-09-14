@@ -2,7 +2,7 @@
 :context: enforce-mutual-tls-validation
 
 
-include::modules/con-rhcl-jtbd-enforce-mutual-tls-validation.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-enforce-mutual-tls-validation.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-rhcl-x509-create-auth-policy.adoc[leveloffset=+1,toc="no"]
 include::modules/proc-rhcl-verifying-x509-auth-layer-one.adoc[leveloffset=+1,toc="no"]

@@ -2,5 +2,5 @@
 :context: understanding-connectivity-link
 
 
-include::modules/con-about-connectivity-link.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-about-connectivity-link.adoc[leveloffset=+0,chunk="to-content"]
 

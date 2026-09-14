@@ -2,6 +2,6 @@
 :context: control-plane-tracing-environment-variables
 
 
-include::modules/con-rhcl-jtbd-control-plane-tracing-environment-variables.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-control-plane-tracing-environment-variables.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/ref-obs-control-plane-tracing-env-variables.adoc[leveloffset=+1,toc="no"]

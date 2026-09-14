@@ -2,6 +2,6 @@
 :context: configure-an-authpolicy-with-identity-injection
 
 
-include::modules/con-rhcl-jtbd-configure-an-authpolicy-with-identity-injection.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-configure-an-authpolicy-with-identity-injection.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-config-authpolicy-with-id-injection.adoc[leveloffset=+1,toc="no"]

@@ -2,5 +2,5 @@
 :context: dns-management-with-the-mcp-gateway
 
 
-include::modules/con-mcp-gateway-dns-management.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-mcp-gateway-dns-management.adoc[leveloffset=+0,chunk="to-content"]
 

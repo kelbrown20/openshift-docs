@@ -2,6 +2,6 @@
 :context: revoke-tool-and-prompt-call-requests
 
 
-include::modules/con-rhcl-jtbd-revoke-tool-and-prompt-call-requests.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-revoke-tool-and-prompt-call-requests.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-revoking-tools-call-requests.adoc[leveloffset=+1,toc="no"]

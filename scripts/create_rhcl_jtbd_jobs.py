@@ -307,7 +307,7 @@ def write_job_map(job):
         lines.append("")
 
     intro = job["intro"].replace("modules/", "")
-    lines.append(f'include::modules/{intro}[leveloffset=+0,chunk="to-content",toc="no"]')
+    lines.append(f'include::modules/{intro}[leveloffset=+0,chunk="to-content"]')
     lines.append("")
 
     for mod in job["modules"]:

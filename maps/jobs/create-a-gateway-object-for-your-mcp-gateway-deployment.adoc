@@ -2,6 +2,6 @@
 :context: create-a-gateway-object-for-your-mcp-gateway-deployment
 
 
-include::modules/con-rhcl-jtbd-create-a-gateway-object-for-your-mcp-gateway-deployment.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-create-a-gateway-object-for-your-mcp-gateway-deployment.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-config-mcp-gateway-gateway.adoc[leveloffset=+1,toc="no"]

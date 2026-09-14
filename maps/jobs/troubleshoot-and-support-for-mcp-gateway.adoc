@@ -2,7 +2,7 @@
 :context: troubleshoot-and-support-for-mcp-gateway
 
 
-include::modules/con-mcp-gateway-ts-gateway-routing.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-mcp-gateway-ts-gateway-routing.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-ts-pods-not-starting.adoc[leveloffset=+1,toc="no"]
 include::modules/proc-mcp-gateway-ts-authn-issues.adoc[leveloffset=+1,toc="no"]

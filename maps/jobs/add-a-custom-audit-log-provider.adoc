@@ -2,6 +2,6 @@
 :context: add-a-custom-audit-log-provider
 
 
-include::modules/con-rhcl-jtbd-add-a-custom-audit-log-provider.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-add-a-custom-audit-log-provider.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-mcp-gateway-add-custom-audit-log-provider.adoc[leveloffset=+1,toc="no"]

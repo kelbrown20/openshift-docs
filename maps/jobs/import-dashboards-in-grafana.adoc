@@ -2,6 +2,6 @@
 :context: import-dashboards-in-grafana
 
 
-include::modules/con-rhcl-jtbd-import-dashboards-in-grafana.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-import-dashboards-in-grafana.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-import-dashboards-grafana.adoc[leveloffset=+1,toc="no"]

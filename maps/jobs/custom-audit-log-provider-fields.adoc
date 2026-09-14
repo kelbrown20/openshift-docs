@@ -2,6 +2,6 @@
 :context: custom-audit-log-provider-fields
 
 
-include::modules/con-rhcl-jtbd-custom-audit-log-provider-fields.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-custom-audit-log-provider-fields.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/ref-mcp-gateway-audit-log-fields.adoc[leveloffset=+1,toc="no"]

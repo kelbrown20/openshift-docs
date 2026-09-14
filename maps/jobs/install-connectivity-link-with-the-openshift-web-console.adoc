@@ -2,6 +2,6 @@
 :context: install-connectivity-link-with-the-openshift-web-console
 
 
-include::modules/con-rhcl-jtbd-install-connectivity-link-with-the-openshift-web-console.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-rhcl-jtbd-install-connectivity-link-with-the-openshift-web-console.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/proc-install-in-openshift-web-console.adoc[leveloffset=+1,toc="no"]

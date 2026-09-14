@@ -2,7 +2,7 @@
 :context: configure-coredns
 
 
-include::modules/con-about-using-onprem-dns-coredns.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-about-using-onprem-dns-coredns.adoc[leveloffset=+0,chunk="to-content"]
 
 include::modules/con-rhcl-coredns-arch.adoc[leveloffset=+1,toc="no"]
 include::modules/proc-use-coredns-single-cluster.adoc[leveloffset=+1,toc="no"]

@@ -2,5 +2,5 @@
 :context: supported-cloud-and-dns-providers
 
 
-include::modules/con-supported-configs.adoc[leveloffset=+0,chunk="to-content",toc="no"]
+include::modules/con-supported-configs.adoc[leveloffset=+0,chunk="to-content"]
 
