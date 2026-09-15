@@ -3,4 +3,5 @@
 
 include::modules/con-about-configuring-observability-dashboards.adoc[leveloffset=+0,chunk="to-content"]
 
+//TODO; KB, unsure if this is needed here if it is also in the `job/configure-prometheus-alerts.adoc`
 include::modules/ref-configure-prometheus-alerts.adoc[leveloffset=+1,toc="no"]
